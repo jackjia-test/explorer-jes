@@ -12,7 +12,7 @@
 
 
 node('zowe-jenkins-agent-dind') {
-  def lib = library("jenkins-library").org.zowe.jenkins_shared_library
+  def lib = library("jenkins-library@users/jack/sonarscan").org.zowe.jenkins_shared_library
 
   def pipeline = lib.pipelines.nodejs.NodeJSPipeline.new(this)
 
